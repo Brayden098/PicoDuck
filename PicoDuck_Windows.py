@@ -22,7 +22,7 @@ options = [
     "\033[94m1) Launch Reverse Shell\033[0m",
     "\033[91m2) Disable Antivirus\033[0m",
     "\033[93m3) Extract WiFi Credentials\033[0m",
-    "\033[96m4) Rickroll by The Ugly Gamer\033[0m",
+    "\033[96m4) Rickroll\033[0m",
     "\033[95m5) Display Hacked Message\033[0m",
     "\033[90m6) Custom Payload\033[0m"
 ]
@@ -46,11 +46,11 @@ letter = input("\nEnter the drive letter assigned to your Pico (e.g., 'E'): ").s
 # Format and set up the Pico
 print("\n\033[93m[1/4] Formatting the Pico...\033[0m")
 os.system(f"copy src\\format.uf2 {letter}:\\")
-sleep(20)
+sleep(30)
 
 print("\033[96m[2/4] Installing CircuitPython...\033[0m")
 os.system(f"copy src\\circuit_python.uf2 {letter}:\\")
-sleep(20)
+sleep(30)
 
 print("\033[95m[3/4] Copying HID libraries...\033[0m")
 os.system(f"mkdir {letter}:\\lib\\adafruit_hid")
