@@ -1,11 +1,9 @@
-#!/usr/bin/env python3
 
-# Import libraries
+
 import os
 from time import sleep
 
-# ASCII Art Title with Colors
-print("\033[95m")  # Set text color to purple
+print("\033[95m")
 print(r"""
     ____  _            ____             __  
    / __ \(_)________  / __ \__  _______/ /__
@@ -15,7 +13,7 @@ print(r"""
                                             
               by The Ugly Gamer
 """)
-print("\033[0m")  # Reset text color
+print("\033[0m")
 
 print("\033[92mWelcome to the PicoDuck Tool!\033[0m\n")
 print("Choose an option below to deploy a payload on your Pico:\n")
