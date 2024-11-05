@@ -25,7 +25,7 @@
 
 1. Clone the PicoDuck repository:
    ```bash
-   git clone https://github.com/your-username/PicoDuck.git
+   git clone https://github.com/ShadowByte098/PicoDuck.git
    cd PicoDuck
    ```
 
